@@ -174,8 +174,9 @@ git clone git@github.com:volcengine/mcp-server.git
 cd mcp-server/server/mcp_server_askecho
 uv run mcp-server-askecho
 
-# 使用sse模式启动(默认为stdio)
+# 使用sse/streamable-http模式启动(默认为stdio)
 uv run mcp-server-askecho -t sse
+uv run mcp-server-askecho -t streamable-http
 ```
 
 ## 部署
